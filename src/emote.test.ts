@@ -36,7 +36,7 @@ describe('emote.ts', () => {
         {
           raw: 'LUL',
           type: 'emote',
-          value: 'https://static-cdn.jtvnw.net/emoticons/v2/1111/default/light/2.0'
+          value: '1111'
         },
         {
           type: 'text',
@@ -45,7 +45,7 @@ describe('emote.ts', () => {
         {
           raw: 'HYPE',
           type: 'emote',
-          value: 'https://static-cdn.jtvnw.net/emoticons/v2/9999/default/light/2.0'
+          value: '9999'
         },
         {
           type: 'text',
@@ -54,7 +54,7 @@ describe('emote.ts', () => {
         {
           raw: 'LUL',
           type: 'emote',
-          value: 'https://static-cdn.jtvnw.net/emoticons/v2/1111/default/light/2.0'
+          value: '1111'
         },
         {
           type: 'text',

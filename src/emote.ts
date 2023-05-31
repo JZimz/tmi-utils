@@ -18,7 +18,7 @@ export function getEmoteAsUrl (id: string, theme: EmoteTheme = 'light', scale: E
   return `https://static-cdn.jtvnw.net/emoticons/v2/${id}/default/${theme}/${scale}`
 }
 
-export function parseEmotesInMessage (emotes: Record<string, string[]>, msg: string, theme: EmoteTheme = 'light', scale: EmoteScale = '2.0'): MessagePart[] {
+export function parseEmotesInMessage (emotes: Record<string, string[]>, msg: string): MessagePart[] {
   if (!emotes) return [{ type: 'text', value: msg }]
 
   // Split the message in a unicode-safe way
@@ -50,7 +50,7 @@ export function parseEmotesInMessage (emotes: Record<string, string[]>, msg: str
     result.push({
       type: 'emote',
       raw: msgArray.slice(start, end + 1).join(''),
-      value: getEmoteAsUrl(id, theme, scale)
+      value: `${id}`
     })
     cursor = end + 1
   }

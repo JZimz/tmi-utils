@@ -29,16 +29,16 @@ client.on('message', (channel, tags, message, self) => {
   const message = document.createElement('span');
 
   // Safely append each part
-  parsedMessage.forEach(({ type, value }) => {
+  parsedMessage.forEach(({ type, value, raw }) => {
     if (type === 'emote') {
       const img = new Image();
       img.src = getEmoteAsUrl(value);
-      img.alt = part.raw;
-      img.title = part.raw;
+      img.alt = raw;
+      img.title = raw;
 
       message.append(img);
     } else {
-      message.append(part.value);
+      message.append(value);
     }
   });
 

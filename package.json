@@ -1,6 +1,6 @@
 {
   "name": "tmi-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript utilities for Twitch chat with tmi.js",
   "files": [
     "/dist"

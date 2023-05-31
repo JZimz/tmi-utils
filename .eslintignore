@@ -1,0 +1,4 @@
+dist
+jest.config.js
+.eslintrc.cjs
+commitlint.config.js
